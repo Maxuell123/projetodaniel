@@ -1,173 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-html, body {
-    width: 100%;
-    height: 100vh;
-    background-image: url(imges/Mask\ Group.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;  
-}
-
-.borda{
-    border: 0;
-    height: 100vh;
+body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+  }
+fieldset {
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin-left: 10%;
-    position: center;    
-}
-
-.borda .dados{
-    font-family: sans-serif;
-    font-size: bold;
-    font-size: 30px;
-    text-align: left;
-    text-align: center;
-    left: -190px;
-    height: 80px;
-    color: black;
+    float: right;
+    background-color: white;
+    margin-right: 20%;
+    border: 1px solid white;
+    border-radius: 20px;
     padding: 10px;
-    margin-top: 15px;
-    margin-bottom: -25px;
+    box-shadow: -5px 5px 4px#8d9191;
+    margin-top: 6%;
     
 }
-.matricula{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 55px;
 
-}
-.matricula input{
-    width: 68%;
-}
-input {
-    width: 60%; 
-    height: 40px;
-    margin-top: 15px;
-    border-radius: 7px;
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    
-}
-.nome{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 55px;
-}
-.po{
-    margin-left: 7%;
-}
-    
-.tel{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 55px;
-}
-.po1{
-    margin-left: 2%;
-}
-.email{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 55px;
-    
-}
-.po2{
-    margin-left: 6%;
-}
-.controle {
-  width: 79%;
-  height: 50px;
-  border-radius: 5px;
-  margin-left: 60px;
-  margin-top: 90px;
-  border: 0;
-  color: white;
-  font-size: 25px;
-  background-color: #42b72a;
-  padding: 5px;
-  cursor: pointer;
-  
-
+.btn {
+    font-size: 100%;
+    border-radius: 3rem;
+    letter-spacing: .1rem;
+    font-weight: Arial;
+    padding: -1rem;  
 }
 
-.controle:hover {
-    background-color: #109606;
-}
-
-.controle2{
-    width: 79%;
-    height: 50px;
-    border-radius: 5px;
-    margin-left: 60px;
-    margin-top: 15px;
-    border: 0;
-    color: white;
-    font-size: 25px;
-    background-color: #4287f5;
-    padding: 5px;
-    cursor: pointer;
-    margin-bottom: 15px;
-}
-
-.controle2:hover{
-    background-color: #6096eb;
-}
-a {
-    text-decoration: none; color: white;
-}
-
-.col{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col img {
-    max-width: 100%;
-    padding: 50px 0;
-    margin-top: -995px;
-    margin-left: 50%;
-}
-
-.ads label{
-    font-size: 30px;
-    margin-left: 58px;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 55px;
-}
-.ads select {
-    width: 60%;
-    margin-left: 35px; 
-    height: 40px;
-    margin-top: 15px;
-    border-radius: 7px;
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-size: 20px;
-    
-}
-.periodo select{
-    margin-left: 22px;
-
-}
-.borda h1{
-    color: #2a1657;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 15px;
-    font-family: sans-serif;
-    font: bold;
+legend h1 {
+    color: #807e7e;   
 }
