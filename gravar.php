@@ -24,7 +24,7 @@ try {
     ':periodo'   => $periodo,
     ':status'    => $status
   ));
-echo "<script>alert('Registro gravado com sucesso.');window.location.assign('index.php');</script>";
+echo "<script>alert('Registro gravado com sucesso.');window.location.assign('inicial.php');</script>";
  // echo $stmt->rowCount();
 } catch(PDOException $e) {
   echo 'Error: ' . $e->getMessage();

@@ -1,17 +1,17 @@
 body {
-    background: #007bff;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
+    background: white;
   }
 fieldset {
     width: 60%;
+    line-height: 15px;
     float: right;
     background-color: white;
-    margin-right: 20%;
+    margin-right: 22%;
     border: 1px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: -5px 5px 4px#8d9191;
-    margin-top: 6%;
+    margin-top: 4%;
     
 }
 
@@ -20,9 +20,55 @@ fieldset {
     border-radius: 3rem;
     letter-spacing: .1rem;
     font-weight: Arial;
-    padding: -1rem;  
+    padding: -5rem;  
+}
+.button {
+    font-size: 100%;
+    border-radius: 3rem;
+    letter-spacing: .1rem;
+    font-weight: Arial;
+    padding: .5rem; 
+    margin-left: 200px;
+    text-decoration: none;
 }
 
 legend h1 {
-    color: #807e7e;   
+    color: #1b1c1c;   
 }
+
+#header {
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+  }
+  
+  #header.active {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  #header .navbar-collapse {
+    margin-left: 600px;
+
+  }
+  
+  #header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 1;
+    padding-right: 0;
+    color: #000;
+    border-bottom: solid 6px transparent;
+  }
+  
+  #header .nav-link:hover {
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
+  }
+
+  
+
+
+  

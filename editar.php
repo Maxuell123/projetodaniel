@@ -16,6 +16,46 @@ echo "
 </head>
 <body>
 
+<!--header-->
+
+<div id='header'>
+<div class='container'>
+  <nav class='navbar navbar-expand-lg navbar-light justify-content-between'>
+	<a class='navbar-brand' href='#'>
+	  <img src='imges/livro.png' width='60' height='60' class='img-fluid' />
+	</a>
+	<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav'
+	  aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
+	  <span class='navbar-toggler-icon'></span>
+	</button>
+	<div class='collapse navbar-collapse' id='navbarNav'>
+	  <ul class='navbar-nav'>
+		<li class='nav-item'>
+		  <a class='nav-link active' aria-current='page' href='index.php'>Dados</a>
+	  
+		</li>
+		<li class='nav-item'>
+		  <a class='nav-link' href='busca.php'>Tabela</a>
+		</li>
+		<li class='nav-item'>
+		  <a class='nav-link' href='grafico.php'>Grafico</a>
+		</li>
+		<li class='nav-item'>
+		  <a class='nav-link' href='arquivo.php'>Excel</a>
+		</li>
+		<li class='nav-item'>
+		  <a class='nav-link' href='https://portal.estacio.br'>Estácio</a>
+		</li>
+	  </ul>
+	</div>
+</div>
+</nav>
+</div>
+</div>
+
+<!--header-->
+
+<!--registro-->
 	<div class='container'>
 	<fieldset name='aluno' style='max-width:1000px;' class='border p-2'>
 	<form class='form-signin' action='gravar.php' method='post'>
@@ -26,7 +66,7 @@ echo "
 		<input type='text' class='form-control' name='matricula' value='".$linha['matricula']."' maxlength='12'></p>
        
 		<p><label for='nome'>Nome</label>
-		<input type='text' class='form-control' name='nome' value='".$linha['nome']."' maxlength='50'> &nbsp;&nbsp; <a href='busca.php'><img src='imges/lupa.png' width='20' height='20' align='center'></a></p>
+		<input type='text' class='form-control' name='nome' value='".$linha['nome']."' maxlength='50'> &nbsp;&nbsp; <a href='busca.php'><img src='imges/lupa1.png' width='40' height='40' align='center'></a></p>
 
 		<p><label for='telefone'>Telefone</label>
 		<input type='text' class='form-control' name='telefone' value='".$linha['telefone']."' maxlength='14'></p>
@@ -74,6 +114,8 @@ echo "
 	  </fieldset>
 	 </form>
 	 </div>
+	 
+	 <!--registro-->
  </body>
  </html>
 ";

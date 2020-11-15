@@ -1,4 +1,7 @@
 <?php
+echo "<link rel='stylesheet' href='bootstrap.min.css'>";
+echo "<link rel='stylesheet' href='grafico.css'>";
+
 require_once 'conectar.php';
 $ads = 0;
 $direito = 0;
@@ -14,8 +17,7 @@ if ($linha["curso"] == "Design"){$design++;}
 if ($linha["curso"] == "Enfermagem"){$enfermagem++;}
 }
 ?>
-<html>
-  <head>
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
@@ -39,9 +41,46 @@ if ($linha["curso"] == "Enfermagem"){$enfermagem++;}
         chart.draw(data, options);
       }
     </script>
+    <head>
+
   </head>
   <body>
-    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-    <center><a href="busca.php"><img src=./imges/voltar.png width="60" height="60"></a></center>
+  <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primeiro</th>
+      <th scope="col">Último</th>
+      <th scope="col">Nickname</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+  <center><figure class="figure">
+  <figcaption class="figure-caption"><h1>GRAFICO.</h1></figcaption>
+  </figure></center>
+    <center><div id="piechart_3d" style="width: 900px; height: 500px;"></div></center>
+    <center><a href="busca.php"><button type="button" class="btn btn-outline-primary">Voltar</button></a></center>
+    
   </body>
 </html>
